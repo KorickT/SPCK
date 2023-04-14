@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/savetheplanet.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2 class="logo">SaveThePlanet</h2>
+      <nav class="navigation">
+        <a href="/savetheplanet.html">Home</a>
+        <a href="/aboutus.html">About</a>
+        <a href="/weather.html">Weather</a>
+        <a href="/contactus.html">Contact</a>
+        <button class="btnLogin-popup">Login</button>
+      </nav>
+    </header>
+    <div id="root">
+      <div class="container">
+        <div class="main-section">
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              name="search-city"
+              id="search-input"
+              placeholder="Tìm kiếm thành phố..."
+            />
+          </div>
+          <div class="info-wrapper">
+            <p class="city-name">Ho Chi Minh City</p>
+            <p class="weather-state">__</p>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather icon"
+              class="weather-icon"
+            />
+            <p class="temperature">__</p>
+          </div>
+        </div>
+        <div class="additional-section">
+          <div class="row">
+            <div class="item">
+              <div class="label">Nhiệt Độ Cao Nhất</div>
+              <div class="tempMax">__</div>
+            </div>
+            <div class="item">
+              <div class="label">Nhiệt Độ Thấp Nhất</div>
+              <div class="tempMin">__</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="item">
+              <div class="label">Gió</div>
+              <div class="value">
+                <span class="wind-speed">__</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="label">Độ ẩm</div>
+              <div class="value">
+                <span class="humidity">__</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
