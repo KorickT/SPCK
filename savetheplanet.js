@@ -24,7 +24,3 @@ register.addEventListener("submit", (e) => {
   localStorage.setItem("users", JSON.stringify(user));
   location.replace("savetheplanet.html");
 });
-
-const wrapper = document.querySelector(".wrapper");
-const loginLink = document.querySelector(".login-link");
-const registerLink = document.querySelector(".register-link");
